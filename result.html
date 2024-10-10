@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Resultados de Análisis</h1>
+    <div id="result"></div>
+    <a href="index.html">Regresar</a>
+
+    <script>
+        // Obtener los datos pasados en la URL
+        const params = new URLSearchParams(window.location.search);
+        const text = params.get('text');
+        const continuity = params.get('continuity');
+
+        // Mostrar el texto extraído y el resultado de continuidad
+        document.getElementById('result').innerHTML = `
+            <h2>Texto Extraído:</h2>
+            <pre class="extracted-text">${text || 'No se encontró texto.'}</pre>
+            <h2>Resultados de Continuidad:</h2>
+            <p class="continuity-results">${continuity || 'No se pudo analizar la continuidad.'}</p>
+        `;
+    </script>
+</body>
+</html>

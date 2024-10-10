@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9; /* Agrega un fondo suave */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.extracted-text {
+    background-color: #eaeaea; /* Fondo claro para el texto extraído */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border: 1px solid #ccc; /* Bordes suaves */
+    border-radius: 5px; /* Bordes redondeados */
+    white-space: pre-wrap; /* Mantener saltos de línea y espacios */
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+
+.continuity-results {
+    background-color: #f0f8ff; /* Color de fondo para resultados de continuidad */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border: 1px solid #ccc; /* Bordes suaves */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
